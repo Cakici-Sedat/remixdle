@@ -6,7 +6,6 @@ export const meta: V2_MetaFunction = () => {
 
 export default function Index() {
   return (
-
         <Link to="/wordle" prefetch="intent" className="m-auto bg-w">
           Inhalt hier!
         </Link>

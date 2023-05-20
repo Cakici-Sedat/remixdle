@@ -4,7 +4,9 @@ export function Header() {
     return(
         <div className="flex flex-row p-2 border-b-2 mx-8 mt-2 border-trex">
             <div className="basis-1/3 px-4">
-               Logo 
+                <Link to={"./"}>
+                    Logo
+                </Link>
             </div>
             <div className="basis-1/3 text-center">
                 Remixdle

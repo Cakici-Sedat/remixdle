@@ -6,7 +6,7 @@ export const meta: V2_MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className=" ">
+    <div className="m-auto bg-w">
         <div>
             This is the login page
         </div>

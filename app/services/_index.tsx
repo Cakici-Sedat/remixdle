@@ -94,7 +94,7 @@ export default function Index() {
   if (correctAnswer) {
     // returned screen after the answer matches any of the words from the 'answers' array
     return (
-      <div className="bg-slate-800 text-consolvis h-screen flex items-center justify-center flex-col gap-6">
+      <div className="bg-slate-800 text-trextrex h-screen flex items-center justify-center flex-col gap-6">
         {answer}
         <Link
           to={""}
@@ -129,7 +129,7 @@ export default function Index() {
       className="h-screen bg-slate-800 flex items-center gap-12 flex-col justify-center border-4 border-slate-900"
     >
       <input
-        className="w-[350px] h-[44px] rounded-md bg-white/20 text-consolvis outline-0 focus:ring-4 focus:ring-white/10 border border-white/20 focus:border-white/40 transition pl-4"
+        className="w-[350px] h-[44px] rounded-md bg-white/20 text-trextrex outline-0 focus:ring-4 focus:ring-white/10 border border-white/20 focus:border-white/40 transition pl-4"
         tabIndex={-1}
         ref={inputRef}
         maxLength={5}
@@ -143,7 +143,7 @@ export default function Index() {
         <div className="grid grid-cols-5 gap-2 p-2 bg-white/20 rounded-md">
           {divElements.map((el) => (
             <div key={el.id}> 
-                <div key={el.id} style={{ backgroundColor: el.backgroundColor }} className="flex items-center justify-center text-2xl font-semibold bg-white/30 h-16 w-16 rounded-md hover:bg-white/20">
+                <div key={el.id} style={{ backgroundColor: el.backgroundColor }} className="flex items-center justify-center text-trex2xl font-semibold bg-white/30 h-16 w-16 rounded-md hover:bg-white/20">
                   {el.text}
                 </div>
             </div>
@@ -153,20 +153,20 @@ export default function Index() {
             
       <button
         type="submit"
-        className="bg-green-500 hover:bg-white/50 text-consolvis py-2 px-6 rounded-sm transition"
+        className="bg-green-500 hover:bg-white/50 text-trextrex py-2 px-6 rounded-sm transition"
       >
         submit
       </button>
       <div
         ref={messageDiv}
         className={`mt-4 ${
-          message ? "p-3 bg-yellow-600/10 text-yellow-600 rounded-md" : "hidden"
+          message ? "p-3 bg-yellow-600/10 text-trexyellow-600 rounded-md" : "hidden"
         }`}
       >
         {message}
         <button
           onClick={closeMessageTab}
-          className="p-2 bg-white/20 text-consolvis rounded-sm ml-2"
+          className="p-2 bg-white/20 text-trextrex rounded-sm ml-2"
         >
           Close
         </button>

@@ -1,5 +1,7 @@
 import stylesheet from "./styles/tailwind.css";
 import type { LinksFunction } from "@remix-run/node";
+import { Header } from "./components/Header"
+import { Footer } from "./components/Footer";
 import {
   Links,
   LiveReload,
@@ -22,8 +24,12 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
-        <Outlet />
+      <body className="bg-gradient-to-br from-slate-700 to-slate-950 text-trex  selection:text-trex selection:bg-slate-900 h-screen w-screen">
+        <Header />
+        <div className="flex h-[90%] justify-center gap-16 px-6 w-auto">
+          <Outlet />
+        </div>
+        <Footer />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />

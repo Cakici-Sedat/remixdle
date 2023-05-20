@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'consolvis': '#fe420d',
+        'trex': '#BEEBEE'
       },
       fontFamily: {
         sans: ["Poppins", ...defaultTheme.fontFamily.sans],

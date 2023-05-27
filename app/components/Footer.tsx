@@ -6,7 +6,7 @@ export function Footer() {
 
             <div className="flex flex-row p-2 border-t-2 border-t-trex mx-8 mb-2">
                 <div className="basis-1/3 px-4">
-                    <Link to={"./aboutus"}>
+                    <Link to={"./about-us"}>
                         About us 
                     </Link>
                 </div>

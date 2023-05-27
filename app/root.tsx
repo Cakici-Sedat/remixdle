@@ -17,16 +17,16 @@ export const links: LinksFunction = () => [
 
 export default function App() {
   return (
-    <html lang="en">
+    <html lang="en" className="min-h-screen">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <Meta />
         <Links />
       </head>
-      <body className="bg-gradient-to-br from-slate-700 to-slate-950 text-trex  selection:text-trex selection:bg-slate-900 lg:h-screen h-max lg:w-screen w-auto">
+      <body className="flex flex-col bg-gradient-to-br from-slate-700 to-slate-950 text-trex  selection:text-trex selection:bg-slate-900 lg:h-screen min-h-screen lg:w-screen w-auto">
         <Header />
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-[90%]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-[90%] mb-auto">
           <Outlet />
         </div>
         <Footer />

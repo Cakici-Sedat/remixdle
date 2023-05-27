@@ -24,9 +24,9 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="bg-gradient-to-br from-slate-700 to-slate-950 text-trex  selection:text-trex selection:bg-slate-900 h-screen w-screen">
+      <body className="bg-gradient-to-br from-slate-700 to-slate-950 text-trex  selection:text-trex selection:bg-slate-900 lg:h-screen h-max lg:w-screen w-auto">
         <Header />
-        <div className="flex h-[90%] justify-center gap-16 px-6 w-auto">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-[90%]">
           <Outlet />
         </div>
         <Footer />

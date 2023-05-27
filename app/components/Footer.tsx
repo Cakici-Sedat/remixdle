@@ -11,7 +11,9 @@ export function Footer() {
                     </Link>
                 </div>
                 <div className="basis-1/3 text-center">
-                    Placeholder
+                <Link to={"./about-us"}>
+                        S&H Games
+                    </Link>
                 </div>
                 <div className="basis-1/3 text-end px-4">
                     <a href="mailto:sedat-cakici@erfunden.de">
